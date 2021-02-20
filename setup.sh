@@ -33,12 +33,10 @@ echo "Switched to ${dotfilesdir}"
 for file in ${files};
 do
   echo "Creating symlink to ${file} in home directory"
-  # ln -sf /${dotfilesdir}/.${file} /${homedir}/.${file}
   ln -sf ${dotfilesdir}/.${file} ${homedir}/.${file}
-  # source /Users/devanshsingh/.zshrc
-  # . / Users/devanshsingh/.zshrc
-  echo "Sourced ${homedir}/.${file}"
   source ${homedir}/.${file}
+  echo "Sourced ${homedir}/.${file}"
+
 done
 
 #run the brew.sh script to download items from homebrew.
