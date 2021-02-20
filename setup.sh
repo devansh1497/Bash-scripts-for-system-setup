@@ -42,5 +42,6 @@ done
 #run the brew.sh script to download items from homebrew.
 echo "====================================================="
 echo "Dowloading stuff from homebrew...."
-#./brew.sh
+./brew.sh
 echo "=====================DONE============================="
+echo "You are good to go!"
